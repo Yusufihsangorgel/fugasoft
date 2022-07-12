@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fugasoft/pages/secondPage/view/second_view.dart';
 import 'package:fugasoft/widgets/calculator_grid_generator.dart';
 import 'package:fugasoft/widgets/menu_grid_generator.dart';
 import 'package:get/get.dart';
@@ -189,7 +190,9 @@ class HomeView extends StatelessWidget {
                             color: Color.fromARGB(255, 113, 36, 10),
                             child: Center(
                                 child: IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Get.to(const SecondView());
+                                    },
                                     icon: Icon(
                                       Icons.exit_to_app,
                                       color: Colors.white,
